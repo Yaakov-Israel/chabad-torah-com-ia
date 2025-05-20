@@ -44,3 +44,24 @@ except Exception as e_model_load:
 # O resto do seu código da interface (st.title, etc.) continua abaixo...
 st.write("Bem-vindo! Este é o início do nosso aplicativo.")
 st.balloons() # Só para ter um efeito visual de que funcionou!
+# streamlit_app.py (continuação)
+
+if opcao_menu_st == "Pensamento de Chassidut para o Dia":
+    st.subheader("Pensamento de Chassidut para o Dia")
+    # Copie a lógica da sua Célula 11 do Colab aqui
+    # (a lista de pensamentos e o random.choice)
+    lista_de_pensamentos_chabad = [
+        "A verdadeira sabedoria (Chochmá) é a capacidade de ver a Divindade em tudo. A compreensão (Biná) é desenvolver essa percepção. O conhecimento (Daat) é conectar-se profundamente com ela.",
+        "Cada mitzvá que cumprimos é como acender uma vela na escuridão, revelando a presença de D'us e aproximando a redenção.",
+        "O estudo do Chassidut nos dá as 'ferramentas intelectuais' para refinar nossas emoções e servir a D'us com alegria e um coração pleno.",
+        "A missão da nossa geração, como ensinada pelo Rebe de Lubavitch, é preparar o mundo para a chegada de Mashiach através de atos de bondade e do estudo da Torá em todos os seus níveis.",
+        "Não subestime o poder de uma única boa ação, uma única boa palavra ou um único bom pensamento. Cada um tem o potencial de transformar o mundo."
+    ]
+    pensamento_selecionado = random.choice(lista_de_pensamentos_chabad) # Certifique-se de ter 'import random' no topo do arquivo
+    st.markdown(f"> *{pensamento_selecionado}*")
+    st.markdown("---") # Uma linha divisória
+
+elif opcao_menu_st == "--- Escolha uma Ferramenta ---":
+    st.info("⬅️ Por favor, escolha uma ferramenta de estudo na barra lateral para começar!")
+
+# Adicionaremos os outros 'elif' para as demais opções do menu depois.
