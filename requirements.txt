@@ -1,6 +1,8 @@
 google-generativeai
 streamlit
-# Adicione estas se/quando for usar as funções de ler HTML/PDF no Streamlit:
-# beautifulsoup4
-# lxml
-# PyMuPDF
+langchain
+langchain-google-genai
+pillow
+# beautifulsoup4 (mantenha comentado se ainda não estiver usando)
+# lxml (mantenha comentado se ainda não estiver usando)
+# PyMuPDF (mantenha comentado se ainda não estiver usando)
